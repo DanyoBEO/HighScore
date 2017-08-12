@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_background"
+    tools:context="com.example.danbe.highscore.MainActivity">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:text="Hi-Score"
+        android:textColor="@color/green"
+        android:textSize="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/textView3"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="89dp"
+        android:text="Your Score: "
+        android:textColor="@color/green"
+        android:textSize="24sp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignRight="@+id/leader_board"
+        android:layout_alignEnd="@+id/leader_board" />
+
+    <TextView
+        android:id="@+id/score_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="365"
+        android:textColor="@color/green"
+        android:textSize="48sp"
+        android:layout_marginBottom="28dp"
+        android:layout_above="@+id/play_button"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/play_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="playButton"
+        android:text="Play"
+        android:layout_marginBottom="48dp"
+        android:layout_above="@+id/leader_board"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/leader_board"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="LeaderBoards"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="62dp" />
+
+
+</RelativeLayout>
